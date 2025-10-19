@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daily Life — Todo List</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="todo-box">
+            <div class="header">
+                <img src="images/planner.png" alt="Planner Icon" class="logo" />
+                <h1>Daily Life — Todo List</h1>
+                <p class="subtitle">Add tasks, mark done, edit, delete — data saved locally</p>
+            </div>
+
+            <div class="input-section">
+                <input type="text" id="taskInput" placeholder="What do you want to do?" />
+                <select id="priority">
+                    <option value="Low">Low</option>
+                    <option value="Medium">Medium</option>
+                    <option value="High">High</option>
+                </select>
+                <button id="addBtn">Add</button>
+            </div>
+
+            <div class="filter-section">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="completed">Completed</button>
+            </div>
+
+            <div class="tasks-section">
+                <h3>Your Tasks</h3>
+                <ul id="taskList"></ul>
+            </div>
+
+            <footer>
+                Made with ❤️ — <span>Krishna</span>
+            </footer>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
